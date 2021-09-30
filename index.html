@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/prism.css" rel="stylesheet"/>
+
+    <title>Boostrap 5</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+        <h1>Boostrap 5</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Base</h1>
+                    </div>
+                    <div class="card-body ">
+                        <h2 class="mb-5">Container</h2>
+                        La class container est prédéfini elle donne width prédéfini et s'adapte. <br/>
+                        La class container peut prendre un breackpoint. La taille max d'applique donc seulement à partir de ce breakpoint.
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">class name</th>
+                                    <th scope="col">Dimensions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">None</th>
+                                    <td><576</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">sm</th>
+                                    <td>≥576px</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">md</th>
+                                    <td>≥768px</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">lg</th>
+                                    <td>≥992px</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">xl</th>
+                                    <td>≥1200px</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">xxl</th>
+                                    <td>≥1400px</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <pre><code class="language-html">&lt;div class="container-sm"&gt;&lt;div&gt;
+&lt;div class="container-md"&gt;&lt;div&gt;
+&lt;div class="container-lg"&gt;&lt;div&gt;
+&lt;div class="container-xl"&gt;&lt;div&gt;
+&lt;div class="container-xxl"&gt;&lt;div&gt;
+                        </code></pre>
+
+                        Le container fluid a une width de 100% pour tout les breakpoints
+                        <pre><code class="language-html">&lt;div class="container-fluid"&gt;&lt;div&gt;</code></pre>
+
+                        <h2 class="mb-5">Marge</h2>
+                        Le margin et padding ce règle aussi depuis des classes. <br/>
+                        m pour le margin et p pour le paddin
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">class name</th>
+                                    <th scope="col">Direction</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">t</th>
+                                    <td>top</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">b</th>
+                                    <td>bottom</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">l</th>
+                                    <td>left</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">r</th>
+                                    <td>right</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">x</th>
+                                    <td>left and right</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">y</th>
+                                    <td>top and bottom</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        Les valeur vont de 1 à 5 et auto
+                        <pre><code class="language-html">&lt;div class="mt-5"&gt;&lt;div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/prism.js"></script>
+
+  </body>
+</html>
