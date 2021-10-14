@@ -6,7 +6,7 @@ var list = document.getElementById('tableSubject')
 for (var entry of test.entries()) {
     const tag = entry[1].localName;
     const id = entry[1].id;
-    if(tag == "h1"){
+    if(tag == "h2"){
         var newStart = document.createElement("ul");
         var newLink = document.createElement("li");
         var newA = document.createElement("a");
@@ -17,7 +17,7 @@ for (var entry of test.entries()) {
         newA.appendChild(text)
         newLink.appendChild(newA);
     }
-    if(tag == "h2"){
+    if(tag == "h3"){
         startH2 = newLink.appendChild(document.createElement("ul"))
         linkH2 = startH2.appendChild(document.createElement("li"))
         aH2 = linkH2.appendChild(document.createElement("a"))
@@ -37,6 +37,3 @@ for (var entry of test.entries()) {
     }
     
 }
-
-var ul = document.querySelectorAll('ul')
-console.log(ul)
